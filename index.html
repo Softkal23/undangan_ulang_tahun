@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Undangan Ulang Tahun</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Floating petals layer -->
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- ============ OPENING / COVER ============ -->
+<section id="opening">
+  <div class="opening-sparkle">✨</div>
+
+  <p class="opening-eyebrow">kamu diundang ke</p>
+
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-letter">
+        <span class="envelope-letter-icon">🎂</span>
+        <span class="envelope-letter-name" id="coverName">Naylla Ramadhania Abidin</span>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="wax-seal" id="waxSeal">
+        <span>17</span>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="opening-title">
+    <span class="opening-title-line">Ulang Tahun ke-<span id="coverUmur">17</span></span>
+    <span class="opening-title-name" id="coverName2">Naylla Ramadhania Abidin</span>
+  </h1>
+
+  <button class="btn-open" id="btnOpen">
+    <span>Buka Undangan</span>
+  </button>
+
+  <p class="opening-hint">ketuk amplop di atas untuk membuka ✨</p>
+</section>
+
+<!-- ============ MAIN INVITATION ============ -->
+<main id="invitation">
+
+  <!-- HERO -->
+  <section id="hero" class="reveal">
+    <p class="hero-eyebrow">A Special Day</p>
+    <p class="hero-sub">Merayakan</p>
+    <h2 class="hero-name" id="heroName">Naylla Ramadhania Abidin</h2>
+    <p class="hero-age"><span id="heroUmur">17</span> Tahun</p>
+    <p class="hero-quote">&ldquo;Semoga setiap langkah dipenuhi kebahagiaan, kesehatan, dan hal-hal indah.&rdquo;</p>
+    <div class="hero-date">
+      <span class="hero-date-day" id="heroDay">5</span>
+      <span class="hero-date-month" id="heroMonth">September</span>
+      <span class="hero-date-year" id="heroYear">2026</span>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- LETTER -->
+  <section id="letter" class="reveal">
+    <div class="letter-card">
+      <p class="letter-to">Untuk keluarga dan sahabat tersayang,</p>
+      <p class="letter-body">
+        Dengan penuh kebahagiaan, kami ingin mengundang Anda untuk hadir dan
+        ikut merayakan hari istimewa.
+      </p>
+      <p class="letter-highlight">🎂 Ulang Tahun <span id="letterName">Naylla Ramadhania Abidin</span> yang ke-<span id="letterUmur">17</span></p>
+      <p class="letter-body">
+        Kehadiran dan doa dari orang-orang tersayang tentu akan membuat hari
+        ulang tahunnya menjadi jauh lebih berkesan. Karena itu, kami sangat
+        berharap Anda dapat meluangkan waktu untuk hadir dan berbagi
+        kebahagiaan bersama kami.
+      </p>
+      <p class="letter-closing">Sampai jumpa di hari istimewa! ❤️</p>
+
+      <div class="letter-divider"><span>✦</span></div>
+
+      <ul class="letter-facts">
+        <li><span class="letter-fact-icon">📅</span><span id="letterTanggal">Sabtu, 5 September 2026</span></li>
+        <li><span class="letter-fact-icon">⏰</span><span id="letterWaktu">15.30 WIB - selesai</span></li>
+        <li><span class="letter-fact-icon">📍</span><span id="letterLokasi">Rumah Kami</span></li>
+      </ul>
+
+      <a href="#event" class="btn-detail">Lihat Detail Acara</a>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="reveal">
+    <p class="countdown-label">Hari Yang Dinantikan</p>
+    <div class="countdown-grid" id="countdownGrid">
+      <div class="countdown-box">
+        <span class="countdown-number" id="cdDays">00</span>
+        <span class="countdown-word">Hari</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-number" id="cdHours">00</span>
+        <span class="countdown-word">Jam</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-number" id="cdMinutes">00</span>
+        <span class="countdown-word">Menit</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-number" id="cdSeconds">00</span>
+        <span class="countdown-word">Detik</span>
+      </div>
+    </div>
+    <p class="countdown-today" id="countdownToday">🎉 Hari ini adalah hari spesialnya! 🎉</p>
+  </section>
+
+  <!-- EVENT DETAILS -->
+  <section id="event" class="reveal">
+    <p class="section-eyebrow">Detail Acara</p>
+    <div class="event-cards">
+      <div class="event-card">
+        <span class="event-icon">📅</span>
+        <p class="event-card-title">Tanggal</p>
+        <p class="event-card-text" id="eventTanggal">Sabtu, 5 September 2026</p>
+      </div>
+      <div class="event-card">
+        <span class="event-icon">⏰</span>
+        <p class="event-card-title">Waktu</p>
+        <p class="event-card-text" id="eventWaktu">15.30 WIB — selesai</p>
+      </div>
+      <div class="event-card">
+        <span class="event-icon">📍</span>
+        <p class="event-card-title">Lokasi</p>
+        <p class="event-card-text" id="eventLokasi">Rumah Kami</p>
+        <p class="event-card-address" id="eventAlamat">Jl.Madrasah II rt/06 rw/10 no.28</p>
+        <a href="#" target="_blank" rel="noopener" class="btn-maps" id="btnMaps">📍 Buka Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="reveal">
+    <p class="section-eyebrow">Little Moments</p>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- filled by script.js from birthdayData.galeri -->
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section id="closing" class="reveal">
+    <p class="closing-heart">❤️</p>
+    <p class="closing-text">Terima kasih telah menjadi bagian dari hari spesial ini.</p>
+    <p class="closing-sub">Kehadiran, doa, dan kasih sayang kalian adalah hadiah yang sangat berarti.</p>
+    <p class="closing-meet">Sampai bertemu di hari ulang tahun<br><span id="closingName">Naylla Ramadhania Abidin</span> 🎂</p>
+    <div class="closing-signoff">
+      <p>With Love,</p>
+      <p class="closing-host" id="closingHost">Keluarga Kami</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- GALLERY MODAL -->
+<div class="modal" id="galleryModal">
+  <button class="modal-close" id="modalClose" aria-label="Tutup">✕</button>
+  <img src="" alt="" id="modalImage">
+</div>
+
+<!-- MUSIC TOGGLE -->
+<button class="music-btn" id="musicBtn" aria-label="Putar musik">
+  <span id="musicIcon">🎵</span>
+</button>
+<audio id="bgMusic" loop preload="none">
+  <source src="music/JENNIE - Dracula (Lyrics).mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/script.js"></script>
+</body>
+</html>
